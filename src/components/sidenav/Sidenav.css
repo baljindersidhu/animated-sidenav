@@ -1,0 +1,41 @@
+.Sidenav {
+    width              : 7vw;
+    height             : 88vh;
+    background-color   : #16131b;
+    animation          : slide-up 1s ease-in-out;
+    animation-fill-mode: forwards;
+    border-radius      : 1.25vh 1.25vh 0vw 0vh;
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(176vh);
+    }
+
+    to {
+        transform: translateY(12vh);
+    }
+}
+
+.StatusBar {
+    width  : 5vw;
+    padding: 1vh 1vw;
+}
+
+.StatusBar .Action {
+    border-radius   : 50%;
+    padding         : 1vh;
+    background-color: white;
+}
+
+.StatusBar .Action:nth-child(1) {
+    background-color: #ff695e;
+}
+
+.StatusBar .Action:nth-child(3) {
+    background-color: #ffc505;
+}
+
+.StatusBar .Action:nth-child(5) {
+    background-color: #17d23c;
+}
