@@ -1,5 +1,15 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Template
+
+This [template](https://dribbble.com/shots/10996186-Expandable-Sidebar-Navigation-Stocklabs) is courtesy of [Julian Herbst](https://dribbble.com/julianherbst). Headover to his profile and checkout more awesome templates like this.
+
+![Template](Stocklabs_Dribbble_V2.mp4)
+
+## Demo
+
+Click [here](https://baljindersidhu.github.io/animated-sidenav/index.html) for a live demo.
+
 ## Available Scripts
 
 In the project directory, you can run:

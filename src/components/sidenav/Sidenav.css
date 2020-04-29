@@ -1,15 +1,20 @@
 .Sidenav {
-    width              : 7vw;
     height             : 88vh;
+    color              : white;
     background-color   : #16131b;
     animation          : slide-up 1s ease-in-out;
     animation-fill-mode: forwards;
     border-radius      : 1.25vh 1.25vh 0vw 0vh;
+    box-shadow         : 0px 0px 1vh;
+    font-family        : 'Baloo Bhaina 2', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
 }
 
 @keyframes slide-up {
     from {
         transform: translateY(176vh);
+
     }
 
     to {
@@ -38,4 +43,177 @@
 
 .StatusBar .Action:nth-child(5) {
     background-color: #17d23c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Brand {
+    height: 10vh;
+}
+
+.Brand .BrandIcon {
+    background-color: white;
+    height          : 4vh;
+    width           : 0.5vw;
+    border-radius   : 1vh;
+    opacity         : 0.95;
+    margin          : 2vh 1.5vw 0vh 3.25vw;
+}
+
+.Brand .BrandIcon::before,
+.Brand .BrandIcon::after {
+    position        : absolute;
+    left            : 0.85vw;
+    top             : 0.85vh;
+    content         : '';
+    width           : inherit;
+    height          : 2.5vh;
+    background-color: inherit;
+    border-radius   : inherit;
+}
+
+.Brand .BrandIcon::before {
+    left: -0.85vw;
+}
+
+.Brand .BrandName {
+    font-size  : 4vh;
+    opacity    : 0.95;
+    font-weight: 500;
+    width      : 16vw;
+    margin-top : 0.35vh;
+    opacity    : 0;
+    transition : width 0.5s ease-in-out, opacity 0.35s linear;
+}
+
+.Brand .BrandName[data-minimized="true"] {
+    width: 0vw;
+}
+
+.Brand .BrandName[data-minimized="false"] {
+    width              : 16vw;
+    animation          : fade-in-slow 0.35s linear;
+    animation-fill-mode: forwards;
+    animation-delay    : 0.4s;
+}
+
+@keyframes fade-in-slow {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.95;
+    }
+}
+
+
+
+
+
+
+
+
+
+.ActionItem{
+    cursor: pointer;
+}
+
+.ActionItem[data-minimized="false"]:hover::before{
+    position: absolute;
+    content: '';
+    background-color: white;
+    height: 8vh;
+    width: 23vw;
+    left: 1vw;
+    top: 1.5vh;
+    border-radius: 1.25vh;
+    opacity: 0.2;
+}
+
+.ActionItem:nth-child(3) {
+    margin-bottom: 5.5vh;
+}
+
+.ActionItem .ActionIcon {
+    margin: 3vh 0.5vw 0vh 2.25vw;
+}
+
+.ActionItem .ActionIcon svg {
+    width : 2.5vw;
+    height: 5vh;
+}
+
+.ActionItem .ActionIcon svg {
+    opacity: 0.7;
+}
+
+.ActionItem:nth-child(3) .ActionIcon svg {
+    opacity: 1;
+}
+
+.ActionItem .ActionName {
+    font-size  : 3.5vh;
+    opacity    : 0.95;
+    height     : 5vh;
+    margin-top : 0.35vh;
+    opacity    : 0;
+    transition : width 0.5s ease-in-out, opacity 0.35s linear;
+    white-space: nowrap;
+}
+
+.ActionItem .ActionName[data-minimized="true"] {
+    width: 0vw;
+}
+
+.ActionItem .ActionName[data-minimized="false"] {
+    width              : 20vw;
+    animation          : fade-in-slow 0.35s linear;
+    animation-fill-mode: forwards;
+    animation-delay    : 0.4s;
+}
+
+
+
+
+
+
+
+
+
+
+
+.ToggleMode {
+    top             : 17.25vh;
+    right           : -1vw;
+    padding         : 0.7vh 0.35vw;
+    background-color: #4b96ff;
+    border-radius   : 50%;
+    transform       : scale(0.4);
+    transition      : transform 0.25s linear;
+    cursor          : pointer;
+}
+
+.ToggleMode svg {
+    opacity         : 0;
+    transition      : transform 0.35s linear;
+    transition-delay: 0.25s;
+}
+
+.ToggleMode:hover {
+    transform: scale(1.15);
+}
+
+.ToggleMode:hover svg {
+    opacity: 1;
 }

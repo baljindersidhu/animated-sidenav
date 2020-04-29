@@ -1,5 +1,6 @@
 {
-	"name": "react-scaffold",
+	"homepage": " https://baljindersidhu.github.io/animated-sidenav",
+	"name": "animated-sidenav",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
