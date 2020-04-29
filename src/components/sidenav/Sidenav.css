@@ -129,8 +129,9 @@
     cursor: pointer;
 }
 
-.ActionItem[data-minimized="false"]:hover::before{
-    position: absolute;
+.ActionItem[data-minimized="false"]:hover::before,
+.ActionItem:nth-child(3)[data-minimized="false"]::before {
+    position: absolute; 
     content: '';
     background-color: white;
     height: 8vh;
