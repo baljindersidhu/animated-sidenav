@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This [template](https://dribbble.com/shots/10996186-Expandable-Sidebar-Navigation-Stocklabs) is courtesy of [Julian Herbst](https://dribbble.com/julianherbst). Headover to his profile and checkout more awesome templates like this.
 
-![Template](Stocklabs_Dribbble_V2.mp4)
+![Template](template.gif)
 
 ## Demo
 
